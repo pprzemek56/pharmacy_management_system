@@ -13,13 +13,9 @@ public class Drug {
     private Long id;
     private String name;
     private String producer;
-    private String description;
     private String category;
+    private String description;
     @OneToMany
-    private Set<DrugComponent> drugComposition;
-
-
-    //TODO: substancje czyne
-    //TODO: zastosowania
+    private Set<DrugComponent> drugComponent;
 
 }
