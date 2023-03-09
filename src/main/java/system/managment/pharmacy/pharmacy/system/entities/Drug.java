@@ -16,6 +16,6 @@ public class Drug {
     private String category;
     private String description;
     @OneToMany
-    private Set<DrugComponent> drugComponent;
+    private Set<DrugComponent> drugComponents;
 
 }

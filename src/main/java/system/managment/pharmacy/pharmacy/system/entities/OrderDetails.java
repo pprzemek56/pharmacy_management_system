@@ -1,12 +1,10 @@
 package system.managment.pharmacy.pharmacy.system.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Data
@@ -19,6 +17,11 @@ public class OrderDetails {
     private String email;
     private String phoneNumber;
     private LocalDate creationDate;
+    private String status;
+    private String paymentType;
     private LocalDate expirationDate;
+    private double price;
+    @OneToMany
+    private List<DrugItem> drugItems;
 
 }

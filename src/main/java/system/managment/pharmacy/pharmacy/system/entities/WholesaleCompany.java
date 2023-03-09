@@ -16,5 +16,5 @@ public class WholesaleCompany {
     @JoinColumn(name = "address_id")
     private Address address;
     private String NIP;
-
+    private String IBAN;
 }
