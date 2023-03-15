@@ -1,12 +1,15 @@
 package system.managment.pharmacy.pharmacy.system.entities;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 import java.util.Set;
 
 @Entity
-@Data
+@Builder
+@RequiredArgsConstructor
 public class Drug {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
